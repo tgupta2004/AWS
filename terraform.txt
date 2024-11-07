@@ -14,7 +14,7 @@ resource "aws_instance" "terraform_sfit"
 }
 
 
-// Policy attached : Administrator Access & 
+// Policy attached : Administrator Access & AmazonS3FullAccess
 // s3 bucket
 provider "aws" {
   access_key = ""
