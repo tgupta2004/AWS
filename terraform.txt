@@ -1,4 +1,5 @@
 // ec2 instances
+// Policy attached : Administrator Access
 provider "aws"
 {
     access_key = ""
@@ -13,7 +14,7 @@ resource "aws_instance" "terraform_sfit"
 }
 
 
-
+// Policy attached : Administrator Access & 
 // s3 bucket
 provider "aws" {
   access_key = ""
