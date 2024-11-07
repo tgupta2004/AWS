@@ -1,0 +1,27 @@
+// ec2 instances
+provider "aws"
+{
+    access_key = ""
+    secret_key = ""
+    region = "us-east-1"
+}
+
+resource "aws_instance" "terraform_sfit" 
+{
+    ami = ""
+    instance_type = "t2.micro"
+}
+
+
+
+// s3 bucket
+provider "aws" {
+  access_key = ""
+  secret_key = ""
+  region     = "us-east-1"
+}
+
+resource "aws_s3_bucket" "" {
+  bucket = "tanmaysfituniquepractical"
+  acl    = "private"
+}
